@@ -52,9 +52,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     'position' => $position,
                     'password_hash' => password_hash($password, PASSWORD_DEFAULT),
                 ]);
+                $user_id = (int)$db->lastInsertId();
                 $db->commit();
                 session_regenerate_id(true);
-                $_SESSION['user_id'] = (int)$db->lastInsertId();
+                $_SESSION['user_id'] = $user_id;
                 $_SESSION['username'] = $email;
                 $_SESSION['display_name'] = $first_name . ' ' . $last_name;
                 header('Location: index.php');

@@ -1,6 +1,7 @@
 <?php
-// Copy this file to config.php, then fill in your InfinityFree database details.
-define('DB_HOST', 'your_mysql_hostname');
-define('DB_NAME', 'your_database_name');
-define('DB_USER', 'your_database_username');
-define('DB_PASSWORD', 'your_database_password');
+// Copy this file to config.php for local XAMPP. For hosting, replace these values
+// with the database host, name, username, and password from your hosting panel.
+define('DB_HOST', '127.0.0.1');
+define('DB_NAME', 'attendance_db');
+define('DB_USER', 'root');
+define('DB_PASSWORD', '');
