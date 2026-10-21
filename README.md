@@ -12,7 +12,7 @@ PHP and MySQL attendance management for CRMC faculty events.
 
 ## LMS Submission
 
-- **Deployed system:** Add the public URL of the deployed site here before submitting. The live URL was not available in the project files.
+- **Deployed system:** https://crmcattendance.wuaze.com
 - **Public GitHub repository:** https://github.com/John08956/Ursabia_Midterm
 - **Sessions:** PHP sessions are used for login state, logout, and CSRF tokens.
 - **Three database transaction examples:**
