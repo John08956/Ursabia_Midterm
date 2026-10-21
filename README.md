@@ -10,6 +10,16 @@ PHP and MySQL attendance management for CRMC faculty events.
 - PDO transactions for registration, member creation/update/deletion, and event deletion
 - Responsive white-and-maroon interface
 
+## LMS Submission
+
+- **Deployed system:** Add the public URL of the deployed site here before submitting. The live URL was not available in the project files.
+- **Public GitHub repository:** https://github.com/John08956/Ursabia_Midterm
+- **Sessions:** PHP sessions are used for login state, logout, and CSRF tokens.
+- **Three database transaction examples:**
+  1. Faculty registration inserts the account and starts the authenticated session.
+  2. Member creation, update, and deletion run inside PDO transactions.
+  3. Event deletion removes related attendance records and the event inside one PDO transaction.
+
 ## Local Setup
 
 1. Start Apache and MySQL in XAMPP.
